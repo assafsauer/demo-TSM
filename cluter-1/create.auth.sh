@@ -1,6 +1,6 @@
 #!/bin/bash
 istioingress=10.9.0.20
-frontend=http-shopping
+frontend=shopping
 
 # clean file and filter uniqe rules
 cat logs.csv |sed 's/,/ /g' | sed "s/:.*//" | sed 's/\/\//\//g'|  awk '!seen[$0]++' | awk '{if (NR!=1) {print}}'  > auth.log
