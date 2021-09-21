@@ -1,0 +1,30 @@
+---
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: asd-shopping
+  labels:
+    app: shopping
+    version: v1
+    release: demo
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: shopping
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 1
+      max: 10
+      default: 2
+      stepsDown: 2
+      stepsUp: 3
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: p99Latency
+        scaleUp: 300
+        scaleDown: 200
+        windowSeconds: 60
