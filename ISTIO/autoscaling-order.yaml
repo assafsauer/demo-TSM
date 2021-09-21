@@ -1,0 +1,24 @@
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: order
+  namespace: default
+  labels:
+    app: order
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: order
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 1
+      max: 10
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: CPUUsagePercent
+        scaleUp: 50
+        scaleDown: 20
