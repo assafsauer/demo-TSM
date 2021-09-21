@@ -3,6 +3,14 @@
 
 ```diff
 
+git clone https://github.com/assafsauer/demo-TSM.git
+cd demo-TSM/cluter-1/
+python3 auth-main.py 
+git branch
+git add manifest/auth/
+git commit -m "auth policies"
+git push 
+ 
 BEFORE:
 root@sauer-virtual-machine:/home/sauer/demo-TSM/cluter-1# curl -i --request HEAD -H 'Cache-Control: no-cache'  http://10.9.0.20/static/images/bottle_square.jpg
 Warning: Setting custom HTTP method to HEAD with -X/--request may not work the 
