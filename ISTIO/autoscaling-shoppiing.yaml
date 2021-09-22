@@ -18,8 +18,8 @@ spec:
       min: 1
       max: 5
     trigger:
-      gracePeriodSeconds: 90
+      gracePeriodSeconds: 30
       metric:
         name: CPUUsagePercent
-        scaleUp: 20
+        scaleUp: 10
         scaleDown: 5
