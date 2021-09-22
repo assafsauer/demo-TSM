@@ -10,6 +10,7 @@ git branch
 git add manifest/auth/
 git commit -m "auth policies"
 git push 
+sleep 20 ; kubectl get AuthorizationPolicy -A
  
 BEFORE:
 root@sauer-virtual-machine:/home/sauer/demo-TSM/cluter-1# curl -i --request HEAD -H 'Cache-Control: no-cache'  http://10.9.0.20/static/images/bottle_square.jpg
