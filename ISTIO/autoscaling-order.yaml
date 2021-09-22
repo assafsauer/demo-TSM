@@ -2,7 +2,7 @@ apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
 kind: Definition
 metadata:
   name: order
-  namespace: default
+  namespace: fitness
   labels:
     app: order
 spec:
