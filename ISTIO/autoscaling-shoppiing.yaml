@@ -3,7 +3,7 @@ apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
 kind: Definition
 metadata:
   name: shopping
-  namespace: default
+  namespace: fitness
   labels:
     app: shopping
 spec:
