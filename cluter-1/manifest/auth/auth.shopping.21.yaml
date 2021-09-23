@@ -11,4 +11,4 @@ spec:
   - to:
     - operation:
         methods: ["GET"]
-        paths: ["/vendor/bootstrap/js/*"]
+        paths: ["/vendor/font-awesome/css/*"]

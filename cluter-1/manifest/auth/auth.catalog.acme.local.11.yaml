@@ -1,14 +1,14 @@
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
-  name: auth.shopping11
+  name: auth.catalog.acme.local11
 spec:
   selector:
     matchLabels:
-      app: shopping
+      app: catalog.acme.local
   action: ALLOW 
   rules:
   - to:
     - operation:
         methods: ["GET"]
-        paths: ["/cart/items/*"]
+        paths: ["/products/*"]

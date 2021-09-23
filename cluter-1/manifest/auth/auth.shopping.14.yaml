@@ -11,4 +11,4 @@ spec:
   - to:
     - operation:
         methods: ["POST"]
-        paths: ["/cart/item/add/*"]
+        paths: ["/order/add/*"]

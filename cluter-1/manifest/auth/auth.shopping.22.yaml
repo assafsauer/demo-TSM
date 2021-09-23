@@ -11,4 +11,4 @@ spec:
   - to:
     - operation:
         methods: ["GET"]
-        paths: ["/vendor/owl.carousel/*"]
+        paths: ["/vendor/jquery.cookie/*"]

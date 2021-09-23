@@ -11,4 +11,4 @@ spec:
   - to:
     - operation:
         methods: ["GET"]
-        paths: ["/vendor/bootstrap/css/*"]
+        paths: ["/vendor/owl.carousel/assets/*"]

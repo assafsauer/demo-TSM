@@ -11,4 +11,4 @@ spec:
   - to:
     - operation:
         methods: ["GET"]
-        paths: ["/js/*"]
+        paths: ["/vendor/owl.carousel/*"]

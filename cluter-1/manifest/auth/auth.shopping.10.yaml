@@ -10,5 +10,5 @@ spec:
   rules:
   - to:
     - operation:
-        methods: ["POST"]
-        paths: ["/order/add/*"]
+        methods: ["GET"]
+        paths: ["/cart/items/*"]
